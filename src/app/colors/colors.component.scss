@@ -1,0 +1,12 @@
+.main-screen {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  .inside-screen {
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+    width: 1400px;
+  }
+}
