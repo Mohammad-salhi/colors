@@ -1,0 +1,34 @@
+
+h1{
+
+  padding-left: 35px;
+  .o-letter{
+    color: rgba(255, 0, 0, 0.5);
+  }
+}
+
+
+.anchor-class {
+
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  display: inline;
+  vertical-align: super;
+  padding-left: 10px;
+}
+
+
+.nav-active {
+  color: rgba(255, 0, 0, 0.5);
+  padding-left: 35px;
+  border-radius: 0 20px 20px 0;
+  border: 13px solid antiquewhite;
+  background-color: antiquewhite;
+  margin-left: -12px;
+}
+
+.nav-inactive {
+  color: #666;
+  padding-left: 35px;
+}

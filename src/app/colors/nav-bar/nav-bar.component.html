@@ -1,0 +1,29 @@
+<div class="">
+  <div class="row p-2">
+    <div class="col-md-3">
+      <div class="d-flex flex-row row-hl">
+        <div class="p-1 item-hr">
+          <h1>
+            C<span class="o-letter">o</span>lors
+          </h1>
+        </div>
+
+        <div *ngFor="let item  of navItems">
+          <div class="item-hl" style="margin: 10px 0 10px 0; order: 1; padding-top :10px !important">
+            <span class="material-icons"
+                  [ngClass]="item.label ===currentRoute?'nav-active': 'nav-inactive'">{{item.icon}}</span>
+            <div class="anchor-class" (click)="goToItem(item.label)">
+              {{item.name}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-9 ">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+
+</div>
